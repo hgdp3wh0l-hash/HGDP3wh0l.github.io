@@ -1,0 +1,1156 @@
+/* 基础重置与全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* 导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #636e72;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0984e3;
+}
+
+/* 英雄区域 */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 5%;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.highlight {
+    color: #2d3436;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* 基本信息展示样式 - 居中调整 */
+.basic-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2.5rem auto;
+    max-width: 700px;
+    justify-content: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1.2rem 1.8rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+    justify-content: flex-start;
+}
+
+.info-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: white;
+    width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.info-content {
+    text-align: left;
+    flex: 1;
+}
+
+.info-content h3 {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-content p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* 英雄区域描述文字 */
+.hero-description {
+    max-width: 700px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: left;
+}
+
+.hero-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 5%;
+        min-height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .basic-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 500px;
+    }
+
+    .info-item {
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .info-item i {
+        font-size: 1.8rem;
+        width: 40px;
+    }
+
+    .info-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        padding: 1.5rem;
+        margin: 2rem auto 0;
+    }
+
+    .hero-description p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem 5%;
+        min-height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .info-item {
+        padding: 0.9rem 1.2rem;
+    }
+
+    .info-item i {
+        font-size: 1.5rem;
+        width: 35px;
+    }
+
+    .info-content h3 {
+        font-size: 0.85rem;
+    }
+
+    .info-content p {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        padding: 1.2rem;
+    }
+
+    .hero-description p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* 通用内容区块 */
+.section {
+    padding: 5rem 5%;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2d3436;
+}
+
+.dark {
+    background-color: #2d3436;
+    color: white;
+}
+
+.dark h2 {
+    color: white;
+}
+
+/* 技能分类样式 */
+.skills-categories {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    color: #0984e3;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+/* 技能标签样式 */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skill-tag {
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+/* 熟练程度标签颜色 */
+.skill-tag.advanced {
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    color: white;
+}
+
+.skill-tag.intermediate {
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    color: white;
+}
+
+.skill-tag.beginner {
+    background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    color: white;
+}
+
+.skill-tag.language {
+    background: linear-gradient(135deg, #fdcb6e, #e17055);
+    color: white;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* 项目经验总结样式 */
+.experience-summary {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    background: linear-gradient(135deg, rgba(253, 203, 110, 0.1), rgba(116, 185, 255, 0.1));
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 5px solid #0984e3;
+}
+
+.experience-summary h3 {
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+.experience-summary ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-summary li {
+    margin-bottom: 1rem;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.experience-summary li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00b894;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.experience-summary strong {
+    color: #0984e3;
+    font-weight: 600;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .skills-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category {
+        padding: 1.2rem;
+    }
+
+    .experience-summary {
+        padding: 1.5rem;
+    }
+
+    .experience-summary li {
+        font-size: 0.95rem;
+    }
+}
+
+/* 项目网格 */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    color: #333;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #0984e3;
+    margin-bottom: 1rem;
+}
+
+/* 项目卡片中的项目元信息 - 确保不换行 */
+.project-card .project-meta {
+    color: #636e72;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    /* 添加防止被grid覆盖的样式 */
+    display: block !important;
+    grid-template-columns: none !important;
+    gap: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #636e72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.project-btn:hover {
+    background-color: #0984e3;
+}
+
+/* 项目徽章 */
+.project-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* 项目1：AIGC短片（紫色） */
+.project-card[data-modal="modal1"] .project-badge {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: white;
+}
+
+/* 项目2：古诗词动画（绿色） */
+.project-card[data-modal="modal2"] .project-badge {
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    color: white;
+}
+
+/* 项目3：跑酷游戏（粉色） */
+.project-card[data-modal="modal3"] .project-badge {
+    background: linear-gradient(135deg, #fd79a8, #e84393);
+    color: white;
+}
+
+/* 项目4：YOLOv8车辆检测（蓝色） */
+.project-card[data-modal="modal4"] .project-badge {
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    color: white;
+}
+
+/* 项目5：微信小程序房产与AI应用（绿色） */
+.project-card[data-modal="modal5"] .project-badge {
+    background: linear-gradient(135deg, #07c160, #09bb07);
+    color: white;
+}
+
+/* 项目6：Unity 3D追逃游戏（橙色） */
+.project-card[data-modal="modal6"] .project-badge {
+    background: linear-gradient(135deg, #e17055, #fdcb6e);
+    color: white;
+}
+
+/* 联系方式新样式 */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+}
+
+.contact-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #0984e3, #00b894);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.contact-details h3 {
+    color: #2d3436;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.contact-details p {
+    color: #0984e3;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    word-break: break-all;
+}
+
+.contact-details small {
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+.contact-notes {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(253, 203, 110, 0.1), rgba(225, 112, 85, 0.1));
+    border-radius: 15px;
+    text-align: center;
+}
+
+.contact-notes p {
+    margin-bottom: 1rem;
+    color: #636e72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-notes i {
+    color: #0984e3;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2d3436;
+    color: #b2bec3;
+    margin-top: 4rem;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+/* ========== 视频模态框样式 ========== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    height: 85vh;
+    margin: 5vh auto;
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+    animation: slideUp 0.4s;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #252525;
+    border-bottom: 1px solid #333;
+}
+
+.modal-header h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.close-modal {
+    color: #aaa;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    color: #fff;
+}
+
+/* 模态框主体布局 - 修复关键部分 */
+.modal-body {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    height: calc(85vh - 80px);
+    overflow: hidden;
+}
+
+/* 左侧容器（视频/图片区域） */
+.video-player-container {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 为项目4和5的特殊容器添加相同样式 */
+#modal4 .project-image-container,
+#modal5 .project-image-container {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    flex: 1;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: calc(100% - 70px);
+}
+
+/* 为项目4和5的图片包装器添加相同样式 */
+#modal4 .video-wrapper,
+#modal5 .video-wrapper {
+    flex: 1;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: calc(100% - 70px);
+}
+
+/* 视频样式 */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+}
+
+/* 图片网格样式 */
+.system-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.system-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #000;
+    height: 100%;
+}
+
+.system-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.system-image:hover img {
+    transform: scale(1.05);
+}
+
+.system-image p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin: 0;
+    padding: 8px;
+    font-size: 0.85rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 15px;
+    background: #252525;
+    border-radius: 10px;
+}
+
+.ctrl-btn {
+    padding: 8px 20px;
+    background: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ctrl-btn:hover {
+    background: #0770c4;
+}
+
+.time-display {
+    color: #aaa;
+    font-family: monospace;
+    margin-left: auto;
+    font-size: 0.9rem;
+}
+
+/* 右侧项目描述区域 */
+.project-description {
+    padding: 25px;
+    overflow-y: auto;
+    background: #1e1e1e;
+    height: 100%;
+}
+
+.description-card {
+    background: #252525;
+    padding: 25px;
+    border-radius: 12px;
+    color: #e0e0e0;
+    min-height: fit-content;
+}
+
+.description-card h3 {
+    color: #74b9ff;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+
+.desc-content {
+    line-height: 1.7;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.desc-content p {
+    margin-bottom: 15px;
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.meta-item i {
+    font-size: 1.5rem;
+    color: #74b9ff;
+    margin-bottom: 8px;
+}
+
+.meta-item span {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.meta-item strong {
+    display: block;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.tech-tags span {
+    background: linear-gradient(135deg, #6c5ce7, #0984e3);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* 项目详情区域 */
+.project-details {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.project-details h4 {
+    color: #74b9ff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-details li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.project-details li:before {
+    content: "•";
+    color: #74b9ff;
+    position: absolute;
+    left: 0;
+}
+
+/* ========== 游戏特色展示区域 ========== */
+.game-features {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.game-features h4 {
+    color: #74b9ff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background: rgba(116, 185, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.feature-item:hover {
+    background: rgba(116, 185, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.feature-item i {
+    font-size: 1.8rem;
+    color: #74b9ff;
+    margin-bottom: 8px;
+}
+
+.feature-item span {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+/* 角色职责区域 */
+.role-section {
+    margin: 30px 0;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.role-section h4 {
+    color: #74b9ff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.role-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.role-section li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.role-section li strong {
+    display: inline-block;
+    color: #74b9ff;
+    margin: 10px 0 5px 0;
+    padding: 5px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(116, 185, 255, 0.3);
+    width: 100%;
+}
+
+/* ========== 响应式调整 ========== */
+@media (max-width: 992px) {
+    .modal-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 90vh;
+    }
+
+    .modal-content {
+        height: 90vh;
+        margin: 5vh auto;
+    }
+
+    .project-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 调整项目4和5的布局 */
+    #modal4 .project-image-container,
+    #modal5 .project-image-container {
+        height: 50%;
+    }
+
+    .video-player-container,
+    #modal4 .project-image-container,
+    #modal5 .project-image-container {
+        height: 50%;
+        padding: 15px;
+    }
+
+    .project-description {
+        height: 50%;
+        padding: 15px;
+    }
+
+    .system-image-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+
+    .modal-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .project-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 游戏特色网格在平板上显示2列 */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 调整模态框主体布局 */
+    .modal-body {
+        grid-template-rows: 40% 60%;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .contact-icon {
+        margin: 0 auto;
+    }
+
+    .system-image-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    /* 游戏特色网格在手机上显示1列 */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 项目4和5样式调整 */
+    .system-image {
+        height: 180px;
+    }
+
+    .system-image img {
+        height: 180px;
+    }
+
+    .role-section {
+        padding: 15px;
+    }
+
+    .role-section li {
+        font-size: 0.9rem;
+    }
+
+    /* 调整模态框主体布局 */
+    .modal-body {
+        grid-template-rows: 35% 65%;
+    }
+
+    .contact-details p {
+        font-size: 1rem;
+    }
+
+    .contact-details h3 {
+        font-size: 1.1rem;
+    }
+}

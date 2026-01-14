@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨镇华的交互式简历</title>
+    <!-- 链接CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-brand">个人作品集</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+       <!-- 主页英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">你好，我是 <span class="highlight">杨镇华</span></h1>
+
+            <div class="basic-info">
+                <div class="info-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="info-content">
+                        <h3>毕业院校</h3>
+                        <p>成都理工大学</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-book"></i>
+                    <div class="info-content">
+                        <h3>专业</h3>
+                        <p>数字媒体与技术</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <div class="info-content">
+                        <h3>学历</h3>
+                        <p>本科</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="info-content">
+                        <h3>求职意向</h3>
+                        <p>游戏开发 / 交互设计</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-description">
+                <p>数字媒体技术专业本科毕业生，专注于Unity游戏开发与交互设计。</p>
+                <p>具备完整的项目开发经验，从创意构思到技术实现的全流程能力。</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- 关于我与技能 -->
+<section id="about" class="section">
+    <h2>关于我 & 专业技能</h2>
+    <div class="about-content">
+        <div class="skills-categories">
+            <!-- 编程语言 -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> 编程语言</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag advanced">Python</span>
+                    <span class="skill-tag advanced">Java</span>
+                    <span class="skill-tag advanced">C#</span>
+                </div>
+            </div>
+
+            <!-- 后端与数据库 -->
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> 后端与数据库</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag intermediate">Spring Boot</span>
+                    <span class="skill-tag intermediate">MyBatis-Plus</span>
+                    <span class="skill-tag intermediate">MySQL</span>
+                    <span class="skill-tag intermediate">Django</span>
+                    <span class="skill-tag intermediate">YOLOv8</span>
+                </div>
+            </div>
+
+            <!-- 游戏开发 -->
+            <div class="skill-category">
+                <h3><i class="fas fa-gamepad"></i> 游戏开发</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag advanced">Unity 3D</span>
+                    <span class="skill-tag advanced">C# 脚本编程</span>
+                    <span class="skill-tag intermediate">UE5.4 引擎</span>
+                    <span class="skill-tag intermediate">蓝图系统</span>
+                    <span class="skill-tag advanced">物理系统</span>
+                    <span class="skill-tag advanced">AI行为树</span>
+                </div>
+            </div>
+
+            <!-- 前端开发 -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> 前端与移动开发</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag intermediate">HTML5/CSS3/JavaScript</span>
+                    <span class="skill-tag intermediate">Vue.js</span>
+                    <span class="skill-tag advanced">微信小程序</span>
+                    <span class="skill-tag intermediate">uniapp</span>
+                    <span class="skill-tag intermediate">uView UI</span>
+                </div>
+            </div>
+
+            <!-- 多媒体设计 -->
+            <div class="skill-category">
+                <h3><i class="fas fa-paint-brush"></i> 多媒体设计</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag advanced">Adobe After Effects</span>
+                    <span class="skill-tag advanced">Adobe Photoshop</span>
+                    <span class="skill-tag intermediate">Adobe Animate</span>
+                    <span class="skill-tag intermediate">3ds Max</span>
+                    <span class="skill-tag advanced">DaVinci Resolve</span>
+                    <span class="skill-tag advanced">AIGC工具应用</span>
+                </div>
+            </div>
+
+            <!-- 语言能力 -->
+            <div class="skill-category">
+                <h3><i class="fas fa-language"></i> 语言能力</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag language">英语四级 (CET-4)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经验总结 -->
+        <div class="experience-summary">
+            <h3><i class="fas fa-briefcase"></i> 项目经验</h3>
+            <ul>
+                <li><strong>Unity 3D游戏开发：</strong>独立完成3D潜行追逃游戏全流程开发，掌握AI系统、物理引擎、UI设计</li>
+                <li><strong>UE5游戏开发：</strong>参与3D生存跑酷游戏开发，负责蓝图系统与物理配置</li>
+                <li><strong>计算机视觉应用：</strong>基于YOLOv8开发智能车辆检测系统，掌握深度学习模型部署</li>
+                <li><strong>微信小程序开发：</strong>独立开发房产AI小程序，集成地图服务与AI对话功能</li>
+                <li><strong>AIGC创作：</strong>使用AI工具制作动画短片，掌握AI生成到专业剪辑全流程</li>
+                <li><strong>前端交互设计：</strong>设计并实现交互式简历网站，展示多媒体作品集</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="section dark">
+        <h2>项目展示</h2>
+        <div class="project-grid">
+            <!-- 项目1：AIGC短片 -->
+            <div class="project-card" data-video="AIGC.mp4" data-modal="modal1">
+                <div class="project-badge">团队作品</div>
+                <h3>《进化-文明》AIGC短片</h3>
+                <p class="project-meta">时长：2分30秒 | 类型：科幻史诗</p>
+                <p>使用AIGC技术呈现138亿年文明演进，从宇宙起源到星际未来。</p>
+                <button class="project-btn" data-target="modal1">
+                    <i class="fas fa-play-circle"></i> 播放视频
+                </button>
+            </div>
+
+            <!-- 项目2：古诗词动画 -->
+            <div class="project-card" data-video="古诗词动画.mp4" data-modal="modal2">
+                <div class="project-badge">个人作品</div>
+                <h3>古诗词意境动画</h3>
+                <p class="project-meta">时长：27秒 | 类型：文化动画</p>
+                <p>将古典诗词与现代动画技术结合，传达诗词中的情感与意境。</p>
+                <button class="project-btn" data-target="modal2">
+                    <i class="fas fa-play-circle"></i> 播放视频
+                </button>
+            </div>
+
+            <!-- 项目3：3D生存跑酷游戏 -->
+            <div class="project-card" data-video="跑酷游戏展示.mp4" data-modal="modal3">
+                <div class="project-badge">团队作品</div>
+                <h3>3D生存跑酷游戏</h3>
+                <p class="project-meta">引擎：UE5.4 | 类型：3D动作跑酷 | 角色：蓝图开发+物理配置</p>
+                <p>使用UE5.4引擎开发的3D生存跑酷游戏，包含背包系统、随机掉落、动态浮台等多种游戏机制。</p>
+                <button class="project-btn" data-target="modal3">
+                    <i class="fas fa-play-circle"></i> 播放演示
+                </button>
+            </div>
+            <!-- 项目4：YOLOv8车辆检测系统 -->
+            <div class="project-card" data-image="车辆检测系统.png" data-modal="modal4">
+                <div class="project-badge">团队作品</div>
+                <h3>YOLOv8智能车辆检测系统</h3>
+                <p class="project-meta">类型：Web应用 | 技术栈：YOLOv8 + Django + OpenCV</p>
+                <p>基于YOLOv8的完整车辆检测Web应用，支持图片/视频上传、车辆检测识别、跟踪统计与可视化展示。</p>
+                <button class="project-btn" data-target="modal4">
+                    <i class="fas fa-search-plus"></i> 查看详情
+                </button>
+            </div>
+            <!-- 项目5：微信小程序房产与AI应用 -->
+            <div class="project-card" data-modal="modal5">
+                <div class="project-badge">个人作品</div>
+                <h3>微信小程序-房产AI应用</h3>
+                <p class="project-meta">类型：微信小程序 | 技术栈：uniapp + Vue + uView</p>
+                <p>集房产展示、定位服务、AI对话与绘画于一体的多功能微信小程序，包含完整的前后端交互与UI设计。</p>
+                <button class="project-btn" data-target="modal5">
+                    <i class="fab fa-weixin"></i> 查看详情
+                </button>
+            </div>
+            <!-- 项目6：Unity 3D追逃小游戏 -->
+            <div class="project-card" data-video="追逃游戏演示.mp4" data-modal="modal6">
+                <div class="project-badge">个人作品</div>
+                <h3>Unity 3D追逃小游戏</h3>
+                <p class="project-meta">引擎：Unity | 类型：3D潜行追逃</p>
+                <p>一款3D潜行追逃类游戏，玩家在海岛中躲避/攻击AI敌人，到达终点逃脱。</p>
+                <button class="project-btn" data-target="modal6">
+                    <i class="fas fa-play-circle"></i> 播放演示
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频模态框1：AIGC短片 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>《进化-文明》AIGC短片</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="video-player-container">
+                    <div class="video-wrapper">
+                        <video id="projectVideo1" controls preload="metadata">
+                            <source src="AIGC.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button class="ctrl-btn play-btn" data-video="1">
+                            <i class="fas fa-play"></i> 播放/暂停
+                        </button>
+                        <button class="ctrl-btn mute-btn" data-video="1">
+                            <i class="fas fa-volume-up"></i> 静音
+                        </button>
+                        <span class="time-display" data-video="1">00:00 / 00:00</span>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="description-card">
+                        <h3><i class="fas fa-info-circle"></i> 作品简介</h3>
+                        <div class="desc-content">
+                            <p>本片《进化-文明》是一部使用AIGC技术创作的2分30秒动画短片，以宇宙起源为起点，呈现138亿年的生命与文明演进史诗。</p>
+                            <p>作品通过28个分镜，系统展现了从宇宙奇点爆发、生命起源、恐龙时代、人类文明到星际未来的完整历程。运用通义万相、即梦AI等工具生成图像，DaVinci Resolve专业剪辑。</p>
+                            <p>短片的创新在于将AI生成技术与宏大叙事结合，实现科普性、艺术性与技术性的统一。团队通过本项目深度掌握AIGC全流程创作。</p>
+                        </div>
+
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span><strong>时长</strong> 2分30秒</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span><strong>团队</strong> 3人协作</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-tools"></i>
+                                <span><strong>工具</strong> AI生成+专业剪辑</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>AIGC生成</span>
+                            <span>DaVinci Resolve</span>
+                            <span>动画短片</span>
+                            <span>进化叙事</span>
+                            <span>科幻史诗</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 视频模态框2：古诗词动画 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>古诗词意境动画</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="video-player-container">
+                    <div class="video-wrapper">
+                        <video id="projectVideo2" controls preload="metadata">
+                            <source src="古诗词动画.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button class="ctrl-btn play-btn" data-video="2">
+                            <i class="fas fa-play"></i> 播放/暂停
+                        </button>
+                        <button class="ctrl-btn mute-btn" data-video="2">
+                            <i class="fas fa-volume-up"></i> 静音
+                        </button>
+                        <span class="time-display" data-video="2">00:00 / 00:27</span>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="description-card">
+                        <h3><i class="fas fa-info-circle"></i> 作品简介</h3>
+                        <div class="desc-content">
+                            <p>本作品是一部27秒的动画短片，主要围绕将古典诗词与现代动画技术相结合，旨在通过视觉艺术的形式让更多人感受到古诗词的美。</p>
+                            <p>通过生动的动画表现，传达诗词中的情感与意境，使观众在欣赏动画的同时，也能领略到古诗的韵味。作品打破了传统静态展示的局限，形成视觉与听觉的双重享受。</p>
+                            <p>创作中使用了Adobe After Effects作为主要工具，通过摄像机运动、特效合成和动态文本等技术手段，创造出流畅且富有表现力的动画效果。</p>
+                        </div>
+
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span><strong>时长</strong> 27秒</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-file-archive"></i>
+                                <span><strong>大小</strong> 41.7MB</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-tools"></i>
+                                <span><strong>工具</strong> After Effects</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>After Effects</span>
+                            <span>动态图形</span>
+                            <span>诗词可视化</span>
+                            <span>音画同步</span>
+                            <span>中国风</span>
+                        </div>
+
+                        <div class="project-details">
+                            <h4><i class="fas fa-list-ul"></i> 项目详情</h4>
+                            <ul>
+                                <li><strong>创作思路：</strong>将古典诗词的意境转化为现代视觉语言</li>
+                                <li><strong>技术方案：</strong>AE摄像机动画 + 特效合成 + 动态排版</li>
+                                <li><strong>创新特色：</strong>传统与现代的视觉融合</li>
+                                <li><strong>收获：</strong>提升了动画制作技能，深入理解古诗词文化内涵</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- 视频模态框3：3D生存跑酷游戏 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>3D生存跑酷游戏 - UE5.4开发</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="video-player-container">
+                    <div class="video-wrapper">
+                        <video id="projectVideo3" controls preload="metadata">
+                            <source src="跑酷游戏展示.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button class="ctrl-btn play-btn" data-video="3">
+                            <i class="fas fa-play"></i> 播放/暂停
+                        </button>
+                        <button class="ctrl-btn mute-btn" data-video="3">
+                            <i class="fas fa-volume-up"></i> 静音
+                        </button>
+                        <span class="time-display" data-video="3">00:00 / 00:00</span>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="description-card">
+                        <h3><i class="fas fa-gamepad"></i> 项目简介</h3>
+                        <div class="desc-content">
+                            <p>本游戏是一款使用UE5.4引擎开发的3D生存跑酷游戏，玩家需要在动态变化的环境中收集物品、躲避障碍，最终成功到达终点。</p>
+                            <p>作为项目组的蓝图开发与物理配置负责人，我主要负责游戏核心机制的蓝图实现，包括背包系统、随机掉落算法、浮台物理效果等模块的开发和优化。</p>
+                            <p>项目采用团队协作开发模式，通过Git进行版本控制，实现了从设计到测试的完整游戏开发流程。</p>
+                        </div>
+
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span><strong>团队</strong> 3人协作</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-cogs"></i>
+                                <span><strong>引擎</strong> UE5.4</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-code"></i>
+                                <span><strong>技术</strong> 蓝图系统</span>
+                            </div>
+                        </div>
+
+                        <div class="game-features">
+                            <h4><i class="fas fa-star"></i> 核心游戏机制</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-backpack"></i>
+                                    <span>背包系统</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-random"></i>
+                                    <span>随机血包掉落</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>加减速带</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-arrows-alt-h"></i>
+                                    <span>晃动浮台</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>爆炸障碍物</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>任务系统</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>Unreal Engine 5.4</span>
+                            <span>蓝图编程</span>
+                            <span>3D游戏开发</span>
+                            <span>物理系统</span>
+                            <span>团队协作</span>
+                        </div>
+
+                        <div class="project-details">
+                            <h4><i class="fas fa-list-ul"></i> 我的主要贡献</h4>
+                            <ul>
+                                <li><strong>蓝图开发：</strong>实现背包系统、随机生成算法的核心蓝图逻辑</li>
+                                <li><strong>物理配置：</strong>配置浮台晃动、加减速带的物理效果参数</li>
+                                <li><strong>系统优化：</strong>优化游戏性能，确保流畅的跑酷体验</li>
+                                <li><strong>团队协作：</strong>与美术、设计同学紧密配合，实现功能整合</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框4：YOLOv8车辆检测系统 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>YOLOv8智能车辆检测系统</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="project-image-container">
+                    <div class="system-image-grid">
+                        <div class="system-image">
+                            <img src="img1.png" alt="系统登录界面">
+                            <p>系统登录注册页面</p>
+                        </div>
+                        <div class="system-image">
+                            <img src="img2.png" alt="检测操作界面">
+                            <p>车辆检测操作界面</p>
+                        </div>
+                        <div class="system-image">
+                            <img src="img2.png" alt="图片检测结果">
+                            <p>图片车辆检测结果</p>
+                        </div>
+                        <div class="system-image">
+                            <img src="img3.png" alt="视频检测结果">
+                            <p>视频车辆统计结果</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="description-card">
+                        <h3><i class="fas fa-project-diagram"></i> 项目简介</h3>
+                        <div class="desc-content">
+                            <p>本系统是一个基于YOLOv8深度学习的智能车辆检测Web应用，实现了从图片/视频上传、车辆检测识别、跟踪统计到结果可视化的完整流程。系统采用前后端分离架构，集成自主训练的YOLOv8模型，支持7种车辆类型检测。</p>
+                            <p>作为人工智能课程设计项目，系统展示了深度学习模型从训练到工程化部署的全过程，为智能交通、安防监控等场景提供了实用原型。</p>
+                        </div>
+
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span><strong>技术栈</strong> YOLOv8 + Django + OpenCV</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span><strong>团队</strong> 2人协作</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-trophy"></i>
+                                <span><strong>精度</strong> mAP@0.5: 0.795</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>YOLOv8</span>
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                            <span>目标跟踪</span>
+                            <span>计算机视觉</span>
+                            <span>深度学习</span>
+                        </div>
+
+                        <div class="role-section">
+                            <h4><i class="fas fa-user-tie"></i> 我的主要职责</h4>
+                                    <ul>
+                                        <li><strong>算法与模型：</strong></li>
+                                        <li>收集构建7类车辆数据集，标注1500+样本</li>
+                                        <li>训练优化YOLOv8模型，450轮次迭代调优</li>
+                                        <li>实现车辆跟踪与视频去重统计算法</li>
+                                        <li>设计车辆ID分配机制，解决目标ID切换问题</li>
+                                        <li><strong>系统集成：</strong></li>
+                                        <li>将训练模型集成到Django后端系统</li>
+                                        <li>开发检测API接口与数据处理逻辑</li>
+                                        <li>实现异常处理与性能优化机制</li>
+                                        <li>设计检测结果的数据结构与返回格式</li>
+                                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框5：微信小程序房产与AI应用 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>微信小程序 - 房产AI应用</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="project-image-container">
+                    <div class="system-image-grid">
+                        <div class="system-image">
+                            <img src="img5.png" alt="小程序首页">
+                            <p>小程序首页 - 轮播与宫格导航</p>
+                        </div>
+                        <div class="system-image">
+                            <img src="img6.png" alt="房产列表页">
+                            <p>热门房产列表页面</p>
+                        </div>
+                        <div class="system-image">
+                            <img src="img7.png" alt="详情页">
+                            <p>房产详情页与弹窗功能</p>
+                        </div>
+                        <div class="system-image">
+                            <img src="img8.png" alt="AI聊天页">
+                            <p>AI对话与绘画功能</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="description-card">
+                        <h3><i class="fab fa-weixin"></i> 项目概述</h3>
+                        <div class="desc-content">
+                            <p>本项目是一个综合性的微信小程序，融合了房产展示、地理位置服务、AI对话与AI绘画等多个功能模块。采用uniapp框架开发，实现了跨平台兼容性，支持微信小程序、H5等多端运行。</p>
+                            <p>项目涵盖了从基础UI组件开发到复杂业务逻辑实现的全过程，包括用户交互、数据绑定、API调用、本地存储等关键技术应用，展示了完整的小程序开发流程。</p>
+                        </div>
+
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-code"></i>
+                                <span><strong>技术栈</strong> uniapp + Vue + uView</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span><strong>平台</strong> 微信小程序</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                <span><strong>模块</strong> 4大功能模块</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>uniapp</span>
+                            <span>Vue.js</span>
+                            <span>微信小程序</span>
+                            <span>uView UI</span>
+                            <span>高德地图API</span>
+                            <span>百度AI</span>
+                        </div>
+
+                        <div class="role-section">
+                            <h4><i class="fas fa-tasks"></i> 主要功能模块</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-home"></i>
+                                    <span>房产展示系统</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>实时定位服务</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>购物车功能</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-comments"></i>
+                                    <span>AI智能对话</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <span>AI绘画生成</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>一键拨号弹窗</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="role-section">
+                            <h4><i class="fas fa-code"></i> 核心技术实现</h4>
+                            <ul>
+                                <li><strong>UI框架与组件化：</strong></li>
+                                <li>使用uView UI框架构建统一美观的界面组件</li>
+                                <li>实现响应式布局与自适应设计</li>
+                                <li>开发轮播图、宫格导航、模态框等交互组件</li>
+                                <li><strong>数据与状态管理：</strong></li>
+                                <li>应用Vue.js数据绑定与响应式系统</li>
+                                <li>实现购物车商品状态管理</li>
+                                <li>使用uni.setStorageSync进行本地数据存储</li>
+                                <li><strong>API集成与服务调用：</strong></li>
+                                <li>集成高德地图API实现逆地理编码定位</li>
+                                <li>调用百度AI平台实现智能对话与绘画</li>
+                                <li>实现异步请求与数据渲染</li>
+                                <li><strong>导航与路由：</strong></li>
+                                <li>配置tabBar底部导航系统</li>
+                                <li>实现页面间跳转与参数传递</li>
+                                <li>使用uni.navigateTo进行页面路由管理</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-details">
+                            <h4><i class="fas fa-lightbulb"></i> 技术亮点</h4>
+                            <ul>
+                                <li><strong>跨平台开发：</strong>使用uniapp实现一次开发，多端部署</li>
+                                <li><strong>组件化设计：</strong>高度复用的UI组件，提升开发效率</li>
+                                <li><strong>AI技术融合：</strong>将传统房产应用与前沿AI技术结合</li>
+                                <li><strong>用户体验优化：</strong>流畅的动画过渡与直观的操作流程</li>
+                                <li><strong>性能优化：</strong>图片懒加载、数据缓存等性能优化措施</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 视频模态框6：Unity 3D追逃小游戏 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Unity 3D追逃小游戏</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="video-player-container">
+                    <div class="video-wrapper">
+                        <video id="projectVideo6" controls preload="metadata">
+                            <source src="追逃视频.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button class="ctrl-btn play-btn" data-video="6">
+                            <i class="fas fa-play"></i> 播放/暂停
+                        </button>
+                        <button class="ctrl-btn mute-btn" data-video="6">
+                            <i class="fas fa-volume-up"></i> 静音
+                        </button>
+                        <span class="time-display" data-video="6">00:00 / 00:00</span>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="description-card">
+                        <h3><i class="fas fa-gamepad"></i> 项目简介</h3>
+                        <div class="desc-content">
+                            <p>《海岛追逃》是一款基于Unity引擎开发的3D潜行追逃类游戏，玩家在开放的海岛场景中扮演逃亡者，需要通过潜行、躲避和攻击等方式对抗AI敌人，最终成功到达逃生点。</p>
+                            <p>游戏融合了潜行、动作和策略元素，玩家需要合理规划路径、利用地形掩护、管理有限资源，体验紧张刺激的追逃过程。</p>
+                            <p>作为独立开发者，我完成了从概念设计到最终实现的完整开发流程，涵盖了游戏策划、编程、场景搭建和优化调试等多个方面。</p>
+                        </div>
+
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-code"></i>
+                                <span><strong>引擎</strong> Unity 2022</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span><strong>类型</strong> 个人独立开发</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span><strong>开发周期</strong> 8周</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>Unity 3D</span>
+                            <span>C#脚本</span>
+                            <span>AI行为树</span>
+                            <span>物理系统</span>
+                            <span>UI设计</span>
+                            <span>关卡设计</span>
+                        </div>
+
+                        <div class="role-section">
+                            <h4><i class="fas fa-user-tie"></i> 我的职责 - 独立完成全流程开发</h4>
+                            <ul>
+                                <li><strong>玩家控制系统：</strong></li>
+                                <li>实现第一/第三人称视角切换与平滑过渡</li>
+                                <li>设计角色移动、奔跑、跳跃、蹲伏等动作状态机</li>
+                                <li>开发武器系统与攻击机制（远程/近战）</li>
+                                <li>实现背包系统与道具使用逻辑</li>
+                                <li><strong>AI敌人系统：</strong></li>
+                                <li>设计巡逻、警戒、追捕、攻击等AI状态</li>
+                                <li>实现视觉与听觉感知系统（视野锥、声音传播）</li>
+                                <li>开发路径寻找与导航网格寻路算法</li>
+                                <li>设计AI行为树与决策逻辑</li>
+                                <li><strong>场景与环境：</strong></li>
+                                <li>搭建海岛地形与环境（植被、建筑、障碍物）</li>
+                                <li>设置光照系统与时间周期变化</li>
+                                <li>配置物理碰撞与触发器系统</li>
+                                <li>设计关卡布局与游戏平衡性</li>
+                                <li><strong>游戏系统：</strong></li>
+                                <li>开发UI界面（血量、背包、任务提示）</li>
+                                <li>实现游戏状态管理与存档系统</li>
+                                <li>设计音效系统与环境音效</li>
+                                <li>进行性能优化与调试</li>
+                            </ul>
+                        </div>
+
+                        <div class="game-features">
+                            <h4><i class="fas fa-star"></i> 核心游戏特色</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-user-secret"></i>
+                                    <span>潜行系统</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span>智能AI敌人</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <span>开放海岛地图</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-crosshairs"></i>
+                                    <span>多样攻击方式</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>动态视野系统</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tools"></i>
+                                    <span>物理互动</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-details">
+                            <h4><i class="fas fa-lightbulb"></i> 技术亮点</h4>
+                            <ul>
+                                <li><strong>模块化设计：</strong>采用组件化架构，便于功能扩展与维护</li>
+                                <li><strong>AI行为树：</strong>实现复杂的敌人决策逻辑与状态管理</li>
+                                <li><strong>物理交互：</strong>真实物理反馈与环境互动系统</li>
+                                <li><strong>性能优化：</strong>通过批处理、LOD等技术保证流畅体验</li>
+                                <li><strong>跨平台：</strong>支持PC端运行，具备移动端扩展能力</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <h2>联系我</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>电话</h3>
+                    <p>18584105909</p>
+                    <small>随时欢迎来电咨询</small>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>邮箱</h3>
+                    <p>yzh18584105909@163.com</p>
+                    <small>通常24小时内回复</small>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>沟通方式</h3>
+                    <p>电话、邮箱</p>
+                    <small>多种联系方式供您选择</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-notes">
+            <p><i class="fas fa-lightbulb"></i> 如有项目合作或技术交流需求，欢迎随时联系！</p>
+            <p><i class="fas fa-clock"></i> 工作日工作时间：9:00-18:00</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 杨镇华. 数字媒体技术专业作品集</p>
+        <p class="footer-note">本网站为《新媒体视觉设计实践》课程作业，展示AIGC与交互设计作品</p>
+    </footer>
+
+    <!-- 链接JS文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
